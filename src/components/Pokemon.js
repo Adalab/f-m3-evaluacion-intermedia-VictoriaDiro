@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 class Pokemon extends React.Component {
   render() {
-    const {name, types, evolution, url} = this.props;
+    const {name, types, evolution, image} = this.props;
 
     return (
       <div className="Pokemon">
-        <img className="PokemonImage" src={url} alt={name}></img>
+        <img className="PokemonImage" src={image} alt={name}></img>
         <h2 className="PokemonName">{name}</h2>
         <ul className="PokeTypeList">
         {types.map((type, index) => {
