@@ -79,7 +79,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Title">Mi lista de Pokemon</h1>
+        <h1 className="Title">Pokemon</h1>
+        <img src="/src/img/pokemon-logo.svg" alt="" className="PokeLogo"/>
         <PokeList
           pokemon={pokemon}
         />
