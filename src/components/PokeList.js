@@ -27,10 +27,7 @@ class PokeList extends React.Component {
 }
 
 PokeList.propTypes = {
-  image: PropTypes.string,
-  name: PropTypes.string,
-  types: PropTypes.arrayOf(PropTypes.string),
-  evolution: PropTypes.string,
+  pokemon: PropTypes.array
 }
 
 export default PokeList;

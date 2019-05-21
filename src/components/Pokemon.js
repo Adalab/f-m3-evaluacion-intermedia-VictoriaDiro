@@ -4,7 +4,7 @@ import './Pokemon.css';
 
 class Pokemon extends React.Component {
   render() {
-    const {name, types, evolution, image} = this.props;
+    const {image, name, types, evolution} = this.props;
 
     return (
       <div className="Pokemon">
@@ -30,5 +30,6 @@ export default Pokemon;
 Pokemon.propTypes = {
   image: PropTypes.string,
   name: PropTypes.string,
-  type: PropTypes.arrayOf(PropTypes.string)
+  types: PropTypes.arrayOf(PropTypes.string),
+  evolution: PropTypes.string,
 }
